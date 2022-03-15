@@ -13,7 +13,7 @@ module alu_manual (
    .clk(clk) {
    edge_detector a_detector(#RISE(1), #FALL(0));
    edge_detector b_detector(#RISE(1), #FALL(0));
-    // this module checks if we are pressing any of the 5 io buttons
+    // this module checks if we are pressing io buttons
     .rst(rst){
       // declare our module to address the segment         
         dff store_a[16](#INIT(0),.clk(clk), .rst(rst));  // to store value a

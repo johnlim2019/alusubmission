@@ -8,12 +8,15 @@ module alu_auto (
     output s[16] // output of sum value, 
    ) {
     alu alu;
+    // clock size how many clocks before we get a rise edge
     const  SLOWCLOCK_SIZE = 27;
   
   
     .clk(clk) {
     counter slowClock(#SIZE(SLOWCLOCK_SIZE),.rst(rst));      
+      //watching slowClock
       edge_detector edge_detector(#RISE(1), #FALL(0));
+        // watching button for press
       edge_detector button_detector(#RISE(1), #FALL(0));
       .rst(rst) {
         dff checkoff_reg[8](#INIT(0), .clk(clk), .rst(rst));
@@ -32,7 +35,7 @@ module alu_auto (
         CMPEQSTART,CMPEQ1,CMPEQ2,CMPEQ3,CMPEQ4,CMPLTSTART,        
         CMPLT1,CMPLT2,CMPLT3,CMPLT4,CMPLESTART,
         CMPLE1,CMPLE2,CMPLE3,CMPLE4,ERRCASE,
-        END,ERROR_STATE}; //TODO: add compare states
+        END,ERROR_STATE}; 
       }
     }
  
