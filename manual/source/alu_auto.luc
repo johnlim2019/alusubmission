@@ -34,8 +34,8 @@ module alu_auto (
         SRASTART,RSA1,RSA2,RSA4,RSA8,
         CMPEQSTART,CMPEQ1,CMPEQ2,CMPEQ3,CMPEQ4,CMPLTSTART,        
         CMPLT1,CMPLT2,CMPLT3,CMPLT4,CMPLESTART,
-        CMPLE1,CMPLE2,CMPLE3,CMPLE4,ERRCASE,
-        END,ERROR_STATE}; 
+        CMPLE1,CMPLE2,CMPLE3,CMPLE4,ERRCASE,ERRCASE1,
+        END,ERROR_STATE,ERROR_STATE1}; 
       }
     }
  
@@ -1134,12 +1134,31 @@ s_reg.d = alu.s;
 alufn_reg.d = b000010;
 if (alu.s == 16h0010){
      if (edge_detector.out == 1) {
+         testCase.d = testCase.ERRCASE1;
+     }
+     } else {
+         testCase.d = testCase.ERROR_STATE1;
+}
+testCase.ERRCASE1:
+alu.x = 16h0005;
+alu.y = 16h0000;
+alu.op = b000010;
+//turn on io_led to indicate which case we are on
+checkoff_reg.d[3] = 1;
+// check values
+flag_reg.d[3] = alu.z;
+flag_reg.d[2] = alu.v;
+flag_reg.d[1] = alu.n;
+flag_reg.d[0] = (alu.s != 16h0010);
+s_reg.d = alu.s;
+alufn_reg.d = b000010;
+if (alu.s == 16h0010){
+     if (edge_detector.out == 1) {
          testCase.d = testCase.END;
      }
      } else {
          testCase.d = testCase.ERROR_STATE;
 }
-
 
 
         
@@ -1158,9 +1177,13 @@ if (alu.s == 16h0010){
   }       
         
         //*********************************ERROR STATE********************************************//
-        
+
+      testCase.ERROR_STATE1:
+        if (button_detector.out == 1) { 
+          testCase.d = testCase.ERRCASE1;
+    }        
       testCase.ERROR_STATE:
         if (button_detector.out == 1) { 
           testCase.d = testCase.END;
     }
-}
+}   

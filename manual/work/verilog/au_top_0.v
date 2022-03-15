@@ -125,6 +125,15 @@ module au_top_0 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
+      M_store_zvn_q <= 1'h0;
+    end else begin
+      M_store_zvn_q <= M_store_zvn_d;
+    end
+  end
+  
+  
+  always @(posedge clk) begin
+    if (rst == 1'b1) begin
       M_store_s_q <= 1'h0;
     end else begin
       M_store_s_q <= M_store_s_d;
@@ -137,15 +146,6 @@ module au_top_0 (
       M_store_s_wrong_q <= 1'h0;
     end else begin
       M_store_s_wrong_q <= M_store_s_wrong_d;
-    end
-  end
-  
-  
-  always @(posedge clk) begin
-    if (rst == 1'b1) begin
-      M_store_zvn_q <= 1'h0;
-    end else begin
-      M_store_zvn_q <= M_store_zvn_d;
     end
   end
   

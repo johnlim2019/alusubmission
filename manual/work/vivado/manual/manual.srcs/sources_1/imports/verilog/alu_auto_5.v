@@ -111,8 +111,10 @@ module alu_auto_5 (
   localparam CMPLE3_testCase = 6'd49;
   localparam CMPLE4_testCase = 6'd50;
   localparam ERRCASE_testCase = 6'd51;
-  localparam END_testCase = 6'd52;
-  localparam ERROR_STATE_testCase = 6'd53;
+  localparam ERRCASE1_testCase = 6'd52;
+  localparam END_testCase = 6'd53;
+  localparam ERROR_STATE_testCase = 6'd54;
+  localparam ERROR_STATE1_testCase = 6'd55;
   
   reg [5:0] M_testCase_d, M_testCase_q = START_testCase;
   
@@ -138,6 +140,7 @@ module alu_auto_5 (
         M_flag_reg_d = 8'h00;
         M_s_reg_d = 16'h57a7;
         M_checkoff_reg_d = 16'h0000;
+        M_alufn_reg_d = 6'h00;
         if (M_button_detector_out == 1'h1) begin
           M_testCase_d = ADDSTART_testCase;
         end
@@ -1009,10 +1012,29 @@ module alu_auto_5 (
         M_alufn_reg_d = 6'h02;
         if (M_alu_s == 16'h0010) begin
           if (M_edge_detector_out == 1'h1) begin
-            M_testCase_d = END_testCase;
+            M_testCase_d = ERRCASE1_testCase;
           end
         end else begin
           M_testCase_d = ERROR_STATE_testCase;
+        end
+      end
+      ERRCASE1_testCase: begin
+        M_alu_x = 16'h0005;
+        M_alu_y = 16'h0000;
+        M_alu_op = 6'h02;
+        M_checkoff_reg_d[3+0-:1] = 1'h1;
+        M_flag_reg_d[3+0-:1] = M_alu_z;
+        M_flag_reg_d[2+0-:1] = M_alu_v;
+        M_flag_reg_d[1+0-:1] = M_alu_n;
+        M_flag_reg_d[0+0-:1] = (M_alu_s != 16'h0010);
+        M_s_reg_d = M_alu_s;
+        M_alufn_reg_d = 6'h02;
+        if (M_alu_s == 16'h0010) begin
+          if (M_edge_detector_out == 1'h1) begin
+            M_testCase_d = END_testCase;
+          end
+        end else begin
+          M_testCase_d = ERROR_STATE1_testCase;
         end
       end
       END_testCase: begin
@@ -1029,11 +1051,25 @@ module alu_auto_5 (
       end
       ERROR_STATE_testCase: begin
         if (M_button_detector_out == 1'h1) begin
+          M_testCase_d = ERRCASE1_testCase;
+        end
+      end
+      ERROR_STATE1_testCase: begin
+        if (M_button_detector_out == 1'h1) begin
           M_testCase_d = END_testCase;
         end
       end
     endcase
   end
+  
+  always @(posedge clk) begin
+    if (rst == 1'b1) begin
+      M_s_reg_q <= 1'h0;
+    end else begin
+      M_s_reg_q <= M_s_reg_d;
+    end
+  end
+  
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
@@ -1067,15 +1103,6 @@ module alu_auto_5 (
       M_testCase_q <= 1'h0;
     end else begin
       M_testCase_q <= M_testCase_d;
-    end
-  end
-  
-  
-  always @(posedge clk) begin
-    if (rst == 1'b1) begin
-      M_s_reg_q <= 1'h0;
-    end else begin
-      M_s_reg_q <= M_s_reg_d;
     end
   end
   

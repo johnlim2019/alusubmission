@@ -1,4 +1,4 @@
-set_property PACKAGE_PIN P11 [get_ports {zvns[0]}]
+set_property PACKAGE_PIN P10 [get_ports {zvns[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {zvns[0]}]
 set_property PACKAGE_PIN N12 [get_ports {zvns[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {zvns[1]}]
