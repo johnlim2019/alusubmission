@@ -23,7 +23,7 @@ module alu_auto_5 (
   reg [16-1:0] M_alu_x;
   reg [16-1:0] M_alu_y;
   reg [6-1:0] M_alu_op;
-  alu_11 alu (
+  alu_10 alu (
     .x(M_alu_x),
     .y(M_alu_y),
     .op(M_alu_op),
@@ -36,21 +36,21 @@ module alu_auto_5 (
   localparam SLOWCLOCK_SIZE = 5'h1d;
   
   wire [29-1:0] M_slowClock_value;
-  counter_13 slowClock (
+  counter_12 slowClock (
     .clk(clk),
     .rst(rst),
     .value(M_slowClock_value)
   );
   wire [1-1:0] M_edge_detector_out;
   reg [1-1:0] M_edge_detector_in;
-  edge_detector_12 edge_detector (
+  edge_detector_11 edge_detector (
     .clk(clk),
     .in(M_edge_detector_in),
     .out(M_edge_detector_out)
   );
   wire [1-1:0] M_button_detector_out;
   reg [1-1:0] M_button_detector_in;
-  edge_detector_12 button_detector (
+  edge_detector_11 button_detector (
     .clk(clk),
     .in(M_button_detector_in),
     .out(M_button_detector_out)
@@ -902,6 +902,95 @@ module alu_auto_5 (
         M_alufn_reg_d = 6'h37;
         if (M_alu_s == 16'h0001) begin
           if (M_edge_detector_out == 1'h1) begin
+            M_testCase_d = MULSTART_testCase;
+          end
+        end else begin
+          M_testCase_d = ERROR_STATE_testCase;
+        end
+      end
+      MULSTART_testCase: begin
+        M_flag_reg_d = 8'h00;
+        M_s_reg_d = 16'h8888;
+        M_checkoff_reg_d = 16'h0000;
+        M_alufn_reg_d = 1'h0;
+        if (M_edge_detector_out == 1'h1) begin
+          M_testCase_d = MUL0_testCase;
+        end
+      end
+      MUL0_testCase: begin
+        M_alu_x = 16'h0005;
+        M_alu_y = 16'h0000;
+        M_alu_op = 6'h02;
+        M_alufn_reg_d = 6'h02;
+        M_checkoff_reg_d[0+0-:1] = 1'h1;
+        M_flag_reg_d[3+0-:1] = M_alu_z;
+        M_flag_reg_d[2+0-:1] = M_alu_v;
+        M_flag_reg_d[1+0-:1] = M_alu_n;
+        M_flag_reg_d[0+0-:1] = (M_alu_s != 16'h0000);
+        M_s_reg_d = M_alu_s;
+        M_alufn_reg_d = 6'h02;
+        if (M_alu_s == 16'h0000) begin
+          if (M_edge_detector_out == 1'h1) begin
+            M_testCase_d = MUL1_testCase;
+          end
+        end else begin
+          M_testCase_d = ERROR_STATE_testCase;
+        end
+      end
+      MUL1_testCase: begin
+        M_alu_x = 16'h0005;
+        M_alu_y = 16'h0005;
+        M_alu_op = 6'h02;
+        M_alufn_reg_d = 6'h02;
+        M_checkoff_reg_d[1+0-:1] = 1'h1;
+        M_flag_reg_d[3+0-:1] = M_alu_z;
+        M_flag_reg_d[2+0-:1] = M_alu_v;
+        M_flag_reg_d[1+0-:1] = M_alu_n;
+        M_flag_reg_d[0+0-:1] = (M_alu_s != 16'h0019);
+        M_s_reg_d = M_alu_s;
+        M_alufn_reg_d = 6'h02;
+        if (M_alu_s == 16'h0019) begin
+          if (M_edge_detector_out == 1'h1) begin
+            M_testCase_d = MUL2_testCase;
+          end
+        end else begin
+          M_testCase_d = ERROR_STATE_testCase;
+        end
+      end
+      MUL2_testCase: begin
+        M_alu_x = 16'h0005;
+        M_alu_y = 16'hffff;
+        M_alu_op = 6'h02;
+        M_alufn_reg_d = 6'h02;
+        M_checkoff_reg_d[2+0-:1] = 1'h1;
+        M_flag_reg_d[3+0-:1] = M_alu_z;
+        M_flag_reg_d[2+0-:1] = M_alu_v;
+        M_flag_reg_d[1+0-:1] = M_alu_n;
+        M_flag_reg_d[0+0-:1] = (M_alu_s != 16'hfffb);
+        M_s_reg_d = M_alu_s;
+        M_alufn_reg_d = 6'h02;
+        if (M_alu_s == 16'hfffb) begin
+          if (M_edge_detector_out == 1'h1) begin
+            M_testCase_d = MUL3_testCase;
+          end
+        end else begin
+          M_testCase_d = ERROR_STATE_testCase;
+        end
+      end
+      MUL3_testCase: begin
+        M_alu_x = 16'hffff;
+        M_alu_y = 16'hfff0;
+        M_alu_op = 6'h02;
+        M_alufn_reg_d = 6'h02;
+        M_checkoff_reg_d[3+0-:1] = 1'h1;
+        M_flag_reg_d[3+0-:1] = M_alu_z;
+        M_flag_reg_d[2+0-:1] = M_alu_v;
+        M_flag_reg_d[1+0-:1] = M_alu_n;
+        M_flag_reg_d[0+0-:1] = (M_alu_s != 16'h0010);
+        M_s_reg_d = M_alu_s;
+        M_alufn_reg_d = 6'h02;
+        if (M_alu_s == 16'h0010) begin
+          if (M_edge_detector_out == 1'h1) begin
             M_testCase_d = ERRCASE_testCase;
           end
         end else begin
@@ -949,15 +1038,6 @@ module alu_auto_5 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_checkoff_reg_q <= 1'h0;
-    end else begin
-      M_checkoff_reg_q <= M_checkoff_reg_d;
-    end
-  end
-  
-  
-  always @(posedge clk) begin
-    if (rst == 1'b1) begin
       M_testCase_q <= 1'h0;
     end else begin
       M_testCase_q <= M_testCase_d;
@@ -970,6 +1050,15 @@ module alu_auto_5 (
       M_alufn_reg_q <= 1'h0;
     end else begin
       M_alufn_reg_q <= M_alufn_reg_d;
+    end
+  end
+  
+  
+  always @(posedge clk) begin
+    if (rst == 1'b1) begin
+      M_checkoff_reg_q <= 1'h0;
+    end else begin
+      M_checkoff_reg_q <= M_checkoff_reg_d;
     end
   end
   

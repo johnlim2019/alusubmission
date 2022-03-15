@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Mar 15 16:08:07 2022
-# Process ID: 14416
+# Start of session at: Tue Mar 15 16:46:36 2022
+# Process ID: 12228
 # Current directory: C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.runs/impl_1
 # Command line: vivado.exe -log au_top_0.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source au_top_0.tcl -notrace
 # Log file: C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.runs/impl_1/au_top_0.vdi
@@ -14,9 +14,9 @@ Command: link_design -top au_top_0 -part xc7a35tftg256-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1018.816 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 999.988 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/alchitry.xdc]
@@ -26,14 +26,13 @@ Finished Parsing XDC File [C:/Users/cajhm/OneDrive - Singapore University of Tec
 Parsing XDC File [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/constraint/au.xdc]
 Finished Parsing XDC File [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/constraint/au.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1018.816 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 999.988 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+No Unisim elements were transformed.
 
 7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1018.816 ; gain = 17.941
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 999.988 ; gain = 0.000
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -44,54 +43,54 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1018.816 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 999.988 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: fcd96378
+Ending Cache Timing Information Task | Checksum: 1267826b1
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1165.758 ; gain = 146.941
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1172.863 ; gain = 172.875
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 15b6c8e52
+Phase 1 Retarget | Checksum: 206431e6f
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1376.762 ; gain = 0.000
-INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 2 cells
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 1384.934 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 2 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 15b6c8e52
+Phase 2 Constant propagation | Checksum: 206431e6f
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1376.762 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 1384.934 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 21662bf6e
+Phase 3 Sweep | Checksum: 2624b458f
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.127 . Memory (MB): peak = 1376.762 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1384.934 ; gain = 0.000
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 21662bf6e
+Phase 4 BUFG optimization | Checksum: 2624b458f
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.163 . Memory (MB): peak = 1376.762 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 1384.934 ; gain = 0.000
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 21662bf6e
+Phase 5 Shift Register Optimization | Checksum: 2624b458f
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.175 . Memory (MB): peak = 1376.762 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.177 . Memory (MB): peak = 1384.934 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 21662bf6e
+Phase 6 Post Processing Netlist | Checksum: 2624b458f
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.186 . Memory (MB): peak = 1376.762 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.184 . Memory (MB): peak = 1384.934 ; gain = 0.000
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -100,7 +99,7 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |               1  |               2  |                                              0  |
+|  Retarget                     |               0  |               2  |                                              0  |
 |  Constant propagation         |               0  |               0  |                                              0  |
 |  Sweep                        |               0  |               0  |                                              0  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
@@ -112,52 +111,37 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1376.762 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 1e39eafaf
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1384.934 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 270044c04
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.229 . Memory (MB): peak = 1376.762 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.223 . Memory (MB): peak = 1384.934 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-INFO: [Pwropt 34-9] Applying IDT optimizations ...
-INFO: [Pwropt 34-10] Applying ODC optimizations ...
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Running Vector-less Activity Propagation...
+Ending Power Optimization Task | Checksum: 270044c04
 
-Finished Running Vector-less Activity Propagation
-
-
-Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
-Ending PowerOpt Patch Enables Task | Checksum: 1e39eafaf
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 1e39eafaf
-
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1508.004 ; gain = 131.242
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1384.934 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 1e39eafaf
+Ending Final Cleanup Task | Checksum: 270044c04
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1384.934 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 1e39eafaf
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1384.934 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 270044c04
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1384.934 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-29 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1508.004 ; gain = 489.188
+opt_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1384.934 ; gain = 384.945
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1384.934 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.runs/impl_1/au_top_0_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file au_top_0_drc_opted.rpt -pb au_top_0_drc_opted.pb -rpx au_top_0_drc_opted.rpx
 Command: report_drc -file au_top_0_drc_opted.rpt -pb au_top_0_drc_opted.pb -rpx au_top_0_drc_opted.rpx
@@ -185,59 +169,64 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1aafe0dbf
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 19097cdea
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17ef71ef5
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 12f63d426
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.682 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 1b21c6ee2
+Phase 1.3 Build Placer Netlist Model | Checksum: 21ab8c66a
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 1b21c6ee2
+Phase 1.4 Constrain Clocks/Macros | Checksum: 21ab8c66a
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 1b21c6ee2
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 21ab8c66a
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 26a48d12e
+Phase 2.1 Floorplanning | Checksum: 1ceea6c84
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 232117a84
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 175736105
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 2.3 Global Placement Core
 
 Phase 2.3.1 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 18 LUT instances to create LUTNM shape
-INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
-INFO: [Physopt 32-775] End 1 Pass. Optimized 8 nets or cells. Created 0 new cell, deleted 8 existing cells and moved 0 existing cell
+INFO: [Physopt 32-1035] Found 53 LUTNM shape to break, 10 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 7, two critical 46, total 53, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 56 nets or cells. Created 53 new cells, deleted 3 existing cells and moved 0 existing cell
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
-INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
-INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
-INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
-INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -246,67 +235,77 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |            0  |              8  |                     8  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |           53  |              3  |                    56  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
-|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
-|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
-|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
-|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |            0  |              8  |                     8  |           0  |           3  |  00:00:00  |
+|  Total                                            |           53  |              3  |                    56  |           0  |           8  |  00:00:00  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.3.1 Physical Synthesis In Placer | Checksum: 12cb4f557
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 1a24c470a
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Phase 2.3 Global Placement Core | Checksum: 1a02015a4
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Phase 2.3 Global Placement Core | Checksum: 1de3aa698
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 1a02015a4
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1de3aa698
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 206ec8112
+Phase 3.1 Commit Multi Column Macros | Checksum: 16efd711c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 19f61e8c5
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 161d1f87d
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 13cbab512
+Phase 3.3 Area Swap Optimization | Checksum: 1d65b21a1
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 1557b3742
+Phase 3.4 Pipeline Register Optimization | Checksum: 1f399722c
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
-Phase 3.5 Small Shape Detail Placement
-Phase 3.5 Small Shape Detail Placement | Checksum: 21f2f4a7a
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 130e6ccd7
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
-Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 18740744f
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1eb50d8bf
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
-Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: 161e4fa74
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1eaca8828
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 161e4fa74
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 22fafc3e4
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1429.113 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 13827af31
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 13827af31
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -314,7 +313,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: ee78b804
+Post Placement Optimization Initialization | Checksum: 102e9946a
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -322,28 +321,28 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.855 | TNS=0.000 |
-Phase 1 Physical Synthesis Initialization | Checksum: e44a8166
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.631 | TNS=-320.768 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1af8f5bbf
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1429.113 ; gain = 0.000
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Ending Physical Synthesis Task | Checksum: c34987db
+Ending Physical Synthesis Task | Checksum: 1cabf200e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Phase 4.1.1.1 BUFG Insertion | Checksum: ee78b804
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 102e9946a
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.855. For the most accurate timing information please run report_timing.
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1429.113 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.271. For the most accurate timing information please run report_timing.
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 96c9e322
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 139e4adca
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 96c9e322
+Phase 4.2 Post Placement Cleanup | Checksum: 139e4adca
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
 
@@ -353,66 +352,852 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |           | Global Congestion | Short Congestion  |
 | Direction | Region Size       | Region Size       |
 |___________|___________________|___________________|
-|      North|                1x1|                1x1|
+|      North|                1x1|                4x4|
 |___________|___________________|___________________|
-|      South|                1x1|                1x1|
+|      South|                1x1|                2x2|
 |___________|___________________|___________________|
 |       East|                1x1|                1x1|
 |___________|___________________|___________________|
 |       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 96c9e322
+Phase 4.3.1 Print Estimated Congestion | Checksum: 139e4adca
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Phase 4.3 Placer Reporting | Checksum: 96c9e322
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 139e4adca
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1429.113 ; gain = 0.000
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 132724374
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 15367b920
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
-Ending Placer Task | Checksum: 12651463d
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Ending Placer Task | Checksum: f1e8240f
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1429.113 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 66 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1508.004 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1429.113 ; gain = 0.008
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.239 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.203 . Memory (MB): peak = 1429.113 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.runs/impl_1/au_top_0_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file au_top_0_io_placed.rpt
-report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1508.004 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1429.113 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file au_top_0_utilization_placed.rpt -pb au_top_0_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file au_top_0_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1508.004 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1429.113 ; gain = 0.000
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
-INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
-INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1429.113 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.271 | TNS=-220.052 |
+Phase 1 Physical Synthesis Initialization | Checksum: 2100d3d95
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.184 . Memory (MB): peak = 1429.113 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.271 | TNS=-220.052 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 2100d3d95
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.200 . Memory (MB): peak = 1429.113 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.271 | TNS=-220.052 |
+INFO: [Physopt 32-663] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[28].  Re-placed instance alu_auto/FSM_onehot_M_testCase_q_reg[28]
+INFO: [Physopt 32-735] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[28]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.260 | TNS=-220.441 |
+INFO: [Physopt 32-663] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[40].  Re-placed instance alu_auto/FSM_onehot_M_testCase_q_reg[40]
+INFO: [Physopt 32-735] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[40]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.260 | TNS=-220.991 |
+INFO: [Physopt 32-663] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[43].  Re-placed instance alu_auto/FSM_onehot_M_testCase_q_reg[43]
+INFO: [Physopt 32-735] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[43]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.189 | TNS=-215.953 |
+INFO: [Physopt 32-663] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[33].  Re-placed instance alu_auto/FSM_onehot_M_testCase_q_reg[33]
+INFO: [Physopt 32-735] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[33]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.189 | TNS=-216.670 |
+INFO: [Physopt 32-663] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[36].  Re-placed instance alu_auto/FSM_onehot_M_testCase_q_reg[36]
+INFO: [Physopt 32-735] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[36]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.186 | TNS=-217.219 |
+INFO: [Physopt 32-662] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[43].  Did not re-place instance alu_auto/FSM_onehot_M_testCase_q_reg[43]
+INFO: [Physopt 32-702] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[43]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[27].  Did not re-place instance alu_auto/FSM_onehot_M_testCase_q_reg[27]
+INFO: [Physopt 32-572] Net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[27] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_16_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_16
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[20]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[20]_i_2
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_16_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_16_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[20]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.175 | TNS=-216.629 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.160 | TNS=-215.819 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.152 | TNS=-215.363 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[18]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[18]_i_3
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[18]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.145 | TNS=-214.828 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_21_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_21
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_59_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_59
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_59_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/M_s_reg_q[5]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[5]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[5]_i_2
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_59_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_59_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/M_s_reg_q[5]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.136 | TNS=-214.342 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.130 | TNS=-214.472 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.110 | TNS=-213.392 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_9_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_9
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_35_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_35
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_35_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.106 | TNS=-213.176 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_6_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_6
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.103 | TNS=-213.021 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_7_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_7
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_n_0. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.103 | TNS=-211.677 |
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.085 | TNS=-210.532 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[20]_i_2_n_0_repN.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[20]_i_2_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[20]_i_2_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_3_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.084 | TNS=-210.478 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_6_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_6
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.079 | TNS=-210.208 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_55_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_55
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_55_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_55_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_55_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.079 | TNS=-210.410 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_47_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_47
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[24]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[24]_i_2
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_47_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_47_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[24]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.078 | TNS=-210.378 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_24_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_24
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_24_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.073 | TNS=-210.108 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_54_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_54
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_54_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_3
+INFO: [Physopt 32-134] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_3_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.073 | TNS=-210.108 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_36_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_36
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_36_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_36_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.065 | TNS=-209.676 |
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_4_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_4
+INFO: [Physopt 32-134] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_4_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_4_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.063 | TNS=-209.400 |
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/M_s_reg_q[14]_i_5_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[14]_i_5_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[14]_i_5
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[20]_i_2_n_0_repN. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[20]_i_2_comp_1.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/M_s_reg_q[14]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.055 | TNS=-208.978 |
+INFO: [Physopt 32-702] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[52]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[52]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[52]_i_2
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[52]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.055 | TNS=-208.873 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_7_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_7
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.055 | TNS=-208.873 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.038 | TNS=-207.700 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_11_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_11
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_11_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_5_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_5
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.037 | TNS=-207.621 |
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2
+INFO: [Physopt 32-134] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.035 | TNS=-206.793 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[26]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[26]_i_3
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[26]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[26]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.034 | TNS=-206.739 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_6_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_6
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_30_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_30
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_30_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.030 | TNS=-206.397 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.030 | TNS=-206.343 |
+INFO: [Physopt 32-702] Processed net alu_auto/M_alu_auto_flag[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_flag_reg_q[0]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_flag_reg_q[0]_i_2
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/M_flag_reg_q[0]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.029 | TNS=-206.288 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.024 | TNS=-206.018 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_38_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_38
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_11_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_11_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_38_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.008 | TNS=-205.154 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.007 | TNS=-205.100 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_41_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_41
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_41_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.007 | TNS=-205.100 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[50]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[50]_i_3
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[50]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.002 | TNS=-204.837 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_38_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_38_comp_1
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_38_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.002 | TNS=-204.837 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_33_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_33
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_33_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.998 | TNS=-204.621 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_18_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_18
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_18_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.992 | TNS=-204.297 |
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0_repN. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.990 | TNS=-204.177 |
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_3_n_0_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_3_n_0_repN.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_3_replica
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_3_n_0_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_3_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_13_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_13
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_3_n_0_repN. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_3_replica_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.984 | TNS=-203.853 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.983 | TNS=-203.821 |
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/p0_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/p0_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_2
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/p0_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/p0_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.980 | TNS=-203.141 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0_repN_1.  Re-placed instance alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_replica_1
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.978 | TNS=-202.883 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.976 | TNS=-202.817 |
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_3
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.976 | TNS=-200.520 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_33_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_33
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_33_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.974 | TNS=-200.412 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_4_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_4
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.968 | TNS=-200.056 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_49_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_49
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_49_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_49_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.961 | TNS=-199.679 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2_n_0_repN.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3_n_0. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.959 | TNS=-199.571 |
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.942 | TNS=-197.764 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_4
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.942 | TNS=-197.583 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[23]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[23]_i_3
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[23]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[23]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[23]_i_3_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[23]_i_3_comp.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.937 | TNS=-197.353 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.920 | TNS=-196.435 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3_n_0_repN.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3_replica
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3_n_0_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.920 | TNS=-196.435 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.914 | TNS=-196.077 |
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/E[0].  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_1
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/E[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_alu_y[13].  Did not re-place instance alu_auto/alu/multiplier/p0_i_3
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/M_alu_y[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.905 | TNS=-195.249 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_93. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_alu_x[4].  Did not re-place instance alu_auto/alu/multiplier/p0_i_22
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/M_alu_x[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q_reg[43]_0.  Did not re-place instance alu_auto/alu/multiplier/p0_i_56
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q_reg[43]_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q_reg[43]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[43].  Did not re-place instance alu_auto/FSM_onehot_M_testCase_q_reg[43]
+INFO: [Physopt 32-702] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[43]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_93. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_16_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_16_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_49_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_49_comp
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_49_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.903 | TNS=-195.141 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_100. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_comp
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.902 | TNS=-195.087 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_9_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_9
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.893 | TNS=-194.601 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_102. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_18_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_18
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_18_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.883 | TNS=-194.061 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_comp
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.877 | TNS=-193.737 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_comp
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.877 | TNS=-193.737 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_104. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_3
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.862 | TNS=-192.902 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_15_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_15
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_44_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_44
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_44_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.856 | TNS=-192.578 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_94. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.855 | TNS=-192.524 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[5]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[5]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/M_s_reg_q[5]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/M_s_reg_q[5]_i_3_n_0.  Re-placed instance alu_auto/alu/multiplier/M_s_reg_q[5]_i_3
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/M_s_reg_q[5]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.854 | TNS=-192.182 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_97. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_21_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_21
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_54_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_54
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_3_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_3
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[29]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.851 | TNS=-191.472 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_96. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_55_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_55_comp
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_55_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.831 | TNS=-190.392 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.827 | TNS=-190.176 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_101. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_59_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_59_comp
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_59_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.824 | TNS=-190.014 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_90. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_18_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_18
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_52_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_52
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_52_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_3
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.824 | TNS=-189.347 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_95. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_36_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_36
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_36_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.814 | TNS=-188.807 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_comp
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.813 | TNS=-186.228 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_92. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[20]_i_2_n_0_repN.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[20]_i_2_comp_1
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[20]_i_2_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.807 | TNS=-185.904 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_3
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_2
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.807 | TNS=-185.598 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_34_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_34
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_34_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.798 | TNS=-185.112 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4_n_0_repN.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4_comp
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.789 | TNS=-184.626 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_103. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_33_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_33
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_33_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.785 | TNS=-184.410 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_49_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_49_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2_n_0_repN.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2_comp
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.775 | TNS=-183.870 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_91. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_58_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_58
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_58_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.775 | TNS=-183.870 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[5]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[5]_i_3
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/M_s_reg_q[5]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.774 | TNS=-183.670 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_47_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_47_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[24]_i_2_n_0_repN.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[24]_i_2_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[24]_i_2_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.769 | TNS=-183.400 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/p0_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_5_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_5
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[49]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.763 | TNS=-182.565 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_98. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_3
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_7_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_7
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.762 | TNS=-182.457 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_4
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.762 | TNS=-181.915 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.761 | TNS=-181.861 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_2
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[31]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.749 | TNS=-179.801 |
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_99. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_4
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_13_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_13
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.745 | TNS=-179.352 |
+INFO: [Physopt 32-702] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[52]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[52]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[52]_i_4
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[52]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.742 | TNS=-179.215 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_5_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_5
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.739 | TNS=-179.053 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_44_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_44
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_44_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.732 | TNS=-178.675 |
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2_n_0_repN.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2_comp
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[30]_i_2_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.725 | TNS=-178.297 |
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[10]_i_5_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[10]_i_5
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[10]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.719 | TNS=-177.904 |
+INFO: [Common 17-14] Message 'Physopt 32-619' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[14]_i_5_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[14]_i_5
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/M_s_reg_q[14]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_35_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_35
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_35_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40
+INFO: [Physopt 32-735] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40_n_0. Optimization improves timing on the net.
+INFO: [Common 17-14] Message 'Physopt 32-735' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_4_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_4
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_11_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_11_comp
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0.  Re-placed instance alu_auto/alu/multiplier/M_s_reg_q[11]_i_2
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_41_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_41
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_4
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_13_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_13
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_4
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_59_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_59_comp
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_7_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_7
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0_repN_1.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_replica_1
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_8_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[11]_i_8
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/E[0].  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_1
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/E[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_alu_x[4].  Did not re-place instance alu_auto/alu/multiplier/p0_i_22
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/M_alu_x[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q_reg[43]_0.  Did not re-place instance alu_auto/alu/multiplier/p0_i_56
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q_reg[43]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+Phase 3 Critical Path Optimization | Checksum: 2100d3d95
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 1429.113 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-662] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[43].  Did not re-place instance alu_auto/FSM_onehot_M_testCase_q_reg[43]
+INFO: [Physopt 32-702] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[43]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_94. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_comp
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_comp
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_90. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_3
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_3_n_0. Replicated 1 times.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_91. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_comp
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/M_s_reg_q[14]_i_5_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[14]_i_5_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[14]_i_5
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/M_s_reg_q[14]_i_5_n_0. Replicated 1 times.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_95. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_comp
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-663] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[23].  Re-placed instance alu_auto/FSM_onehot_M_testCase_q_reg[23]
+INFO: [Physopt 32-662] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[23].  Did not re-place instance alu_auto/FSM_onehot_M_testCase_q_reg[23]
+INFO: [Physopt 32-702] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[50]_i_3_n_0_repN.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[50]_i_3_comp
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_7_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_7
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0_repN_1.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_replica_1
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0_repN_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_8_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[11]_i_8
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0_repN_1. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_replica_1_comp.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_7_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_7
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_n_0_repN. Replicated 1 times.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_comp
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_15_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_15
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_45_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_45
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_45_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_5_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_5
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_21_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_21
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_comp
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[16]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[16]_i_2
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[16]_i_2_n_0. Replicated 1 times.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_9_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_9
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_34_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_34
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_34_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0_repN_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0_repN_1.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_replica
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_34_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_34_comp.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_3_n_0_repN.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_3_replica
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[6]_i_2_comp.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_5_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_5
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_5_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-601] Processed net alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_n_0_repN_1. Net driver alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_replica_1 was replaced.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/M_s_reg_q[14]_i_5_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[14]_i_5_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[14]_i_5
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_5_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_5_comp.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_3_n_0_repN.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_3_comp
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_45_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_45
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_45_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_2_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_2
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_45_n_0. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_45_comp.
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0_repN_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0_repN_1.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_replica
+INFO: [Physopt 32-81] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0_repN_1. Replicated 1 times.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[10]_i_4_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[10]_i_4
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_41_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_41
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_n_0_repN_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_n_0_repN_2.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_replica_2
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_n_0_repN_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_n_0_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[10]_i_8_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[10]_i_8
+INFO: [Physopt 32-710] Processed net alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_n_0_repN_2. Critical path length was reduced through logic transformation on cell alu_auto/alu/multiplier/M_s_reg_q[10]_i_2_replica_2_comp.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_41_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_41
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/E[0].  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_1
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/E[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_alu_x[4].  Did not re-place instance alu_auto/alu/multiplier/p0_i_22
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/M_alu_x[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q_reg[43]_0.  Did not re-place instance alu_auto/alu/multiplier/p0_i_56
+INFO: [Physopt 32-572] Net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q_reg[43]_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q_reg[43]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[23].  Did not re-place instance alu_auto/FSM_onehot_M_testCase_q_reg[23]
+INFO: [Physopt 32-702] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[43].  Did not re-place instance alu_auto/FSM_onehot_M_testCase_q_reg[43]
+INFO: [Physopt 32-702] Processed net alu_auto/FSM_onehot_M_testCase_q_reg_n_0_[43]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_comp
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_7_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[9]_i_7
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[51]_i_2_comp
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_18_n_0.  Re-placed instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_18
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[3]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[8]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_n_0_repN_1.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[28]_i_10_replica
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40_n_0.  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_40_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[11]_i_2
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_8_n_0.  Did not re-place instance alu_auto/alu/multiplier/M_s_reg_q[11]_i_8
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/M_s_reg_q[11]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/E[0].  Did not re-place instance alu_auto/alu/multiplier/FSM_onehot_M_testCase_q[53]_i_1
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/E[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/M_alu_x[4].  Did not re-place instance alu_auto/alu/multiplier/p0_i_22
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/M_alu_x[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q_reg[43]_0.  Did not re-place instance alu_auto/alu/multiplier/p0_i_56
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/FSM_onehot_M_testCase_q_reg[43]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net alu_auto/alu/multiplier/p0_n_94. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+Phase 4 Critical Path Optimization | Checksum: 2100d3d95
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:29 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1429.113 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-2.485 | TNS=-159.916 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.786  |         60.136  |           16  |              0  |                   138  |           0  |           2  |  00:00:29  |
+|  Total          |          0.786  |         60.136  |           16  |              0  |                   138  |           0  |           3  |  00:00:29  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1429.113 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: c2baabcd
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:30 . Memory (MB): peak = 1429.113 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-75 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+760 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:30 . Memory (MB): peak = 1429.113 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.276 . Memory (MB): peak = 1508.004 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.372 . Memory (MB): peak = 1430.430 ; gain = 1.316
 INFO: [Common 17-1381] The checkpoint 'C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.runs/impl_1/au_top_0_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 Running DRC as a precondition to command route_design
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
@@ -421,51 +1206,51 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 42ced88e ConstDB: 0 ShapeSum: e3826daf RouteDB: 0
+Checksum: PlaceDB: c622d1f ConstDB: 0 ShapeSum: 7e2b8d92 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 6e906d0b
+Phase 1 Build RT Design | Checksum: 10498f87e
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1510.992 ; gain = 2.988
-Post Restoration Checksum: NetGraph: 61bcfde7 NumContArr: cd36f24 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1521.492 ; gain = 78.957
+Post Restoration Checksum: NetGraph: 3412b6b2 NumContArr: d08641cc Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 6e906d0b
+Phase 2.1 Create Timer | Checksum: 10498f87e
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1511.012 ; gain = 3.008
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1521.492 ; gain = 78.957
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 6e906d0b
+Phase 2.2 Fix Topology Constraints | Checksum: 10498f87e
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1516.992 ; gain = 8.988
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1527.480 ; gain = 84.945
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 6e906d0b
+Phase 2.3 Pre Route Cleanup | Checksum: 10498f87e
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1516.992 ; gain = 8.988
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1527.480 ; gain = 84.945
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 123b97cc7
+Phase 2.4 Update Timing | Checksum: 18d3b0432
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:29 . Memory (MB): peak = 1524.609 ; gain = 16.605
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.992  | TNS=0.000  | WHS=-0.325 | THS=-6.459 |
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1536.371 ; gain = 93.836
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.359 | TNS=-149.150| WHS=-0.081 | THS=-1.557 |
 
-Phase 2 Router Initialization | Checksum: 1956629a6
+Phase 2 Router Initialization | Checksum: 1dfd54bf7
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 1525.496 ; gain = 17.492
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1536.906 ; gain = 94.371
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.0103643 %
-  Global Horizontal Routing Utilization  = 0.00884956 %
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 1069
+  Number of Failed Nets               = 1265
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 1069
+  Number of Unrouted Nets             = 1265
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
@@ -473,81 +1258,154 @@ Router Utilization Summary
 Phase 3 Initial Routing
 
 Phase 3.1 Global Routing
-Phase 3.1 Global Routing | Checksum: 1956629a6
+Phase 3.1 Global Routing | Checksum: 1dfd54bf7
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 1529.566 ; gain = 21.562
-Phase 3 Initial Routing | Checksum: 1a1583f66
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1540.148 ; gain = 97.613
+Phase 3 Initial Routing | Checksum: 15ffff608
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:30 . Memory (MB): peak = 1529.566 ; gain = 21.562
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.148 ; gain = 97.613
+INFO: [Route 35-580] Design has 17 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[25]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[26]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[21]/D|
+|                    clk_0 |                    clk_0 |                                                                 alu_auto/FSM_onehot_M_testCase_q_reg[3]/D|
+|                    clk_0 |                    clk_0 |                                                                 alu_auto/FSM_onehot_M_testCase_q_reg[8]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 254
- Number of Nodes with overlaps = 98
- Number of Nodes with overlaps = 62
- Number of Nodes with overlaps = 38
- Number of Nodes with overlaps = 19
- Number of Nodes with overlaps = 12
- Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 984
+ Number of Nodes with overlaps = 620
+ Number of Nodes with overlaps = 398
+ Number of Nodes with overlaps = 277
+ Number of Nodes with overlaps = 94
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 5
  Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 3
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.037  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.751 | TNS=-243.836| WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 16725f805
+Phase 4.1 Global Iteration 0 | Checksum: 110891ecd
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.566 ; gain = 21.562
-Phase 4 Rip-up And Reroute | Checksum: 16725f805
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:34 . Memory (MB): peak = 1540.148 ; gain = 97.613
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.566 ; gain = 21.562
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 300
+ Number of Nodes with overlaps = 265
+ Number of Nodes with overlaps = 96
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 36
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.589 | TNS=-237.362| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 18217ea62
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:41 . Memory (MB): peak = 1540.148 ; gain = 97.613
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 311
+ Number of Nodes with overlaps = 263
+ Number of Nodes with overlaps = 155
+ Number of Nodes with overlaps = 85
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.160 | TNS=-207.320| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 11eb7b85c
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:51 . Memory (MB): peak = 1540.148 ; gain = 97.613
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 307
+ Number of Nodes with overlaps = 194
+ Number of Nodes with overlaps = 107
+ Number of Nodes with overlaps = 87
+ Number of Nodes with overlaps = 69
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.531 | TNS=-235.269| WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 159266c54
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:01:01 . Memory (MB): peak = 1545.812 ; gain = 103.277
+Phase 4 Rip-up And Reroute | Checksum: 159266c54
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:01:01 . Memory (MB): peak = 1545.812 ; gain = 103.277
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 1dbaf3270
+Phase 5.1.1 Update Timing | Checksum: 1784969fb
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.566 ; gain = 21.562
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.130  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:01:28 ; elapsed = 00:01:01 . Memory (MB): peak = 1545.812 ; gain = 103.277
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.067 | TNS=-199.092| WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: 1dbaf3270
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 209f72e34
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.566 ; gain = 21.562
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:02 . Memory (MB): peak = 1548.055 ; gain = 105.520
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1dbaf3270
+Phase 5.2 Clock Skew Optimization | Checksum: 209f72e34
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.566 ; gain = 21.562
-Phase 5 Delay and Skew Optimization | Checksum: 1dbaf3270
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:02 . Memory (MB): peak = 1548.055 ; gain = 105.520
+Phase 5 Delay and Skew Optimization | Checksum: 209f72e34
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.566 ; gain = 21.562
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:02 . Memory (MB): peak = 1548.055 ; gain = 105.520
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 16aa693e8
+Phase 6.1.1 Update Timing | Checksum: 1c392017d
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.566 ; gain = 21.562
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.130  | TNS=0.000  | WHS=0.131  | THS=0.000  |
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:02 . Memory (MB): peak = 1548.055 ; gain = 105.520
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.032 | TNS=-195.613| WHS=0.097  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 1243b82e7
+Phase 6.1 Hold Fix Iter | Checksum: 1c392017d
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.566 ; gain = 21.562
-Phase 6 Post Hold Fix | Checksum: 1243b82e7
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:02 . Memory (MB): peak = 1548.055 ; gain = 105.520
+Phase 6 Post Hold Fix | Checksum: 1c392017d
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.566 ; gain = 21.562
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:02 . Memory (MB): peak = 1548.055 ; gain = 105.520
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.364107 %
-  Global Horizontal Routing Utilization  = 0.42556 %
+  Global Vertical Routing Utilization    = 0.929363 %
+  Global Horizontal Routing Utilization  = 0.899011 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -557,44 +1415,71 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 1c1a3265e
+Congestion Report
+North Dir 1x1 Area, Max Cong = 57.6577%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 81.0811%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 69.1176%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.566 ; gain = 21.562
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 27c8f23f5
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:02 . Memory (MB): peak = 1548.055 ; gain = 105.520
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1c1a3265e
+Phase 8 Verifying routed nets | Checksum: 27c8f23f5
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1530.223 ; gain = 22.219
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:02 . Memory (MB): peak = 1548.055 ; gain = 105.520
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 20de3bf5e
+Phase 9 Depositing Routes | Checksum: 1b59071b9
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1530.223 ; gain = 22.219
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:02 . Memory (MB): peak = 1548.055 ; gain = 105.520
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=1.130  | TNS=0.000  | WHS=0.131  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.032 | TNS=-195.613| WHS=0.097  | THS=0.000  |
 
-INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 20de3bf5e
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1b59071b9
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1530.223 ; gain = 22.219
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:02 . Memory (MB): peak = 1548.055 ; gain = 105.520
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1530.223 ; gain = 22.219
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:02 . Memory (MB): peak = 1548.055 ; gain = 105.520
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-90 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+781 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:39 . Memory (MB): peak = 1530.223 ; gain = 22.219
+route_design: Time (s): cpu = 00:01:32 ; elapsed = 00:01:04 . Memory (MB): peak = 1548.055 ; gain = 117.625
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.235 . Memory (MB): peak = 1540.105 ; gain = 9.883
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.295 . Memory (MB): peak = 1551.590 ; gain = 3.535
 INFO: [Common 17-1381] The checkpoint 'C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.runs/impl_1/au_top_0_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file au_top_0_drc_routed.rpt -pb au_top_0_drc_routed.pb -rpx au_top_0_drc_routed.rpx
 Command: report_drc -file au_top_0_drc_routed.rpt -pb au_top_0_drc_routed.pb -rpx au_top_0_drc_routed.rpx
@@ -614,12 +1499,13 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-102 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+793 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file au_top_0_route_status.rpt -pb au_top_0_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file au_top_0_timing_summary_routed.rpt -pb au_top_0_timing_summary_routed.pb -rpx au_top_0_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
 INFO: [runtcl-4] Executing : report_incremental_reuse -file au_top_0_incremental_reuse_routed.rpt
 INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
 INFO: [runtcl-4] Executing : report_clock_utilization -file au_top_0_clock_utilization_routed.rpt
@@ -632,9 +1518,13 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 Running DRC as a precondition to command write_bitstream
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP alu_auto/alu/multiplier/p0 input alu_auto/alu/multiplier/p0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP alu_auto/alu/multiplier/p0 input alu_auto/alu/multiplier/p0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP alu_auto/alu/multiplier/p0 output alu_auto/alu/multiplier/p0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP alu_manual/alu/multiplier/p0 output alu_manual/alu/multiplier/p0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP alu_auto/alu/multiplier/p0 multiplier stage alu_auto/alu/multiplier/p0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP alu_manual/alu/multiplier/p0 multiplier stage alu_manual/alu/multiplier/p0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 6 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -643,13 +1533,13 @@ Loading route data...
 Processing options...
 Creating bitmap...
 Creating bitstream...
-Bitstream compression saved 12020736 bits.
+Bitstream compression saved 13473056 bits.
 Writing bitstream ./au_top_0.bit...
 Writing bitstream ./au_top_0.bin...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-12 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+12 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 2009.234 ; gain = 445.918
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 15 16:09:56 2022...
+write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 2013.043 ; gain = 431.473
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 15 16:49:41 2022...

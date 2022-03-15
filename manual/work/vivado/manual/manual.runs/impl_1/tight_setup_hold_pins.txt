@@ -1,0 +1,21 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[25]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[26]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[21]/D|
+|                    clk_0 |                    clk_0 |                                                                 alu_auto/FSM_onehot_M_testCase_q_reg[3]/D|
+|                    clk_0 |                    clk_0 |                                                                 alu_auto/FSM_onehot_M_testCase_q_reg[8]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[10]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[34]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[35]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[11]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[45]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[19]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[51]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[39]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[48]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[38]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[41]/D|
+|                    clk_0 |                    clk_0 |                                                                alu_auto/FSM_onehot_M_testCase_q_reg[20]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

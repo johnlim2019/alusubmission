@@ -24,7 +24,7 @@ module alu_manual_4 (
   reg [16-1:0] M_alu_x;
   reg [16-1:0] M_alu_y;
   reg [6-1:0] M_alu_op;
-  alu_11 alu (
+  alu_10 alu (
     .x(M_alu_x),
     .y(M_alu_y),
     .op(M_alu_op),
@@ -36,14 +36,14 @@ module alu_manual_4 (
   
   wire [1-1:0] M_a_detector_out;
   reg [1-1:0] M_a_detector_in;
-  edge_detector_12 a_detector (
+  edge_detector_11 a_detector (
     .clk(clk),
     .in(M_a_detector_in),
     .out(M_a_detector_out)
   );
   wire [1-1:0] M_b_detector_out;
   reg [1-1:0] M_b_detector_in;
-  edge_detector_12 b_detector (
+  edge_detector_11 b_detector (
     .clk(clk),
     .in(M_b_detector_in),
     .out(M_b_detector_out)

@@ -84,28 +84,24 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/alu_11.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/alu_10.v}
   {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/alu_auto_5.v}
   {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/alu_manual_4.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/async_fifo_14.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/au_debugger_6.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/boolean_18.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/boolean_15.v}
   {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/button_conditioner_2.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/comp_19.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/counter_13.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/counter_8.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/decoder_10.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/edge_detector_12.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/comp_16.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/counter_12.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/counter_7.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/decoder_9.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/edge_detector_11.v}
   {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/multi_seven_seg_3.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/pipeline_7.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/pipeline_6.v}
   {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/reset_conditioner_1.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/seven_seg_9.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/shifter16_17.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/simple_dual_ram_15.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/simple_dual_ram_21.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/sixteen_bit_full_adder_16.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/sixteen_bit_multiplier_20.v}
-  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/au_top_0_debug_0.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/seven_seg_8.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/shifter16_14.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/sixteen_bit_full_adder_13.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/sixteen_bit_multiplier_17.v}
+  {C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/au_top_0.v}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
