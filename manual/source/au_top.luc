@@ -11,7 +11,8 @@ module au_top (
     //   0
     // 3 1 4
     //   2
-    input io_dip [3][8]     // DIP switches on IO Shield
+    input io_dip [3][8],    // DIP switches on IO Shield
+    output zvns[4]
   ) {
   
       sig rst;   
@@ -49,8 +50,13 @@ module au_top (
     alu_manual.abutton = buttoncond.out[0];
     alu_manual.bbutton = buttoncond.out[1];
     alu_auto.button = buttoncond.out[4];
-    // connect our selector io_dip to led 
-    io_led[2][1:0] = io_dip[2][1:0];
+
+    // connect flags 
+    //io_led[2][7:5] = store_zvn.q;
+    //io_led[2][0] = store_s_wrong.q;    
+    // connect external led to register for flags 
+     zvns[3:1] = store_zvn.q;        
+     zvns[0] = store_s_wrong.q;
     
     //load registers
     if (io_dip[2][0] == 0){
@@ -60,20 +66,15 @@ module au_top (
       // connect leds to dip switches
       io_led[1][7:0] = io_dip[1][7:0];        
       io_led[0][7:0] = io_dip[0][7:0]; 
-      // io_led[2][7:2] = io_dip[2][7:2];  
-      // connect flags 
-      // connect external led to register for flags 
-       io_led[2][7:5] = store_zvn.q;        
+      io_led[2][7:2] = io_dip[2][7:2];  
     } else {
       // load registers 
       store_zvn.d = alu_auto.flag[3:1];
       store_s.d = alu_auto.s;
       store_s_wrong.d = alu_auto.flag[0];
+      // connect checkoff and alufn to leds
       io_led[1] = alu_auto.checkoff;
-      io_led[0][7:2] = alu_auto.alufn;
-      // connect external led to register for flags 
-      io_led[2][7:5] = store_zvn.q;        
-      io_led[2][0] = store_s_wrong.q;
+      io_led[2][7:2] = alu_auto.alufn;
     }
   
     

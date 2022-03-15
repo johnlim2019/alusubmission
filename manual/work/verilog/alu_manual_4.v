@@ -83,27 +83,18 @@ module alu_manual_4 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_store_b_q <= 1'h0;
-    end else begin
-      M_store_b_q <= M_store_b_d;
-    end
-  end
-  
-  
-  always @(posedge clk) begin
-    if (rst == 1'b1) begin
-      M_store_s_q <= 1'h0;
-    end else begin
-      M_store_s_q <= M_store_s_d;
-    end
-  end
-  
-  
-  always @(posedge clk) begin
-    if (rst == 1'b1) begin
       M_store_alufn_q <= 1'h0;
     end else begin
       M_store_alufn_q <= M_store_alufn_d;
+    end
+  end
+  
+  
+  always @(posedge clk) begin
+    if (rst == 1'b1) begin
+      M_store_a_q <= 1'h0;
+    end else begin
+      M_store_a_q <= M_store_a_d;
     end
   end
   
@@ -119,9 +110,18 @@ module alu_manual_4 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_store_a_q <= 1'h0;
+      M_store_b_q <= 1'h0;
     end else begin
-      M_store_a_q <= M_store_a_d;
+      M_store_b_q <= M_store_b_d;
+    end
+  end
+  
+  
+  always @(posedge clk) begin
+    if (rst == 1'b1) begin
+      M_store_s_q <= 1'h0;
+    end else begin
+      M_store_s_q <= M_store_s_d;
     end
   end
   

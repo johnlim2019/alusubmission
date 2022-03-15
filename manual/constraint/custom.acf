@@ -1,0 +1,4 @@
+pin zvns[0] C48;
+pin zvns[1] C46;
+pin zvns[2] C43;
+pin zvns[3] C40;

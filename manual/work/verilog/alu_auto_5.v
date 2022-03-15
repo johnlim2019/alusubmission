@@ -33,9 +33,9 @@ module alu_auto_5 (
     .n(M_alu_n)
   );
   
-  localparam SLOWCLOCK_SIZE = 5'h1d;
+  localparam SLOWCLOCK_SIZE = 5'h1b;
   
-  wire [29-1:0] M_slowClock_value;
+  wire [27-1:0] M_slowClock_value;
   counter_12 slowClock (
     .clk(clk),
     .rst(rst),
@@ -131,13 +131,12 @@ module alu_auto_5 (
     s = M_s_reg_q;
     alufn = M_alufn_reg_q;
     M_button_detector_in = button;
-    M_edge_detector_in = M_slowClock_value[28+0-:1];
-    M_edge_detector_in = button;
+    M_edge_detector_in = M_slowClock_value[26+0-:1];
     
     case (M_testCase_q)
       START_testCase: begin
         M_flag_reg_d = 8'h00;
-        M_s_reg_d = 16'h0000;
+        M_s_reg_d = 16'h57a7;
         M_checkoff_reg_d = 16'h0000;
         if (M_button_detector_out == 1'h1) begin
           M_testCase_d = ADDSTART_testCase;
@@ -1038,18 +1037,9 @@ module alu_auto_5 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_testCase_q <= 1'h0;
+      M_flag_reg_q <= 1'h0;
     end else begin
-      M_testCase_q <= M_testCase_d;
-    end
-  end
-  
-  
-  always @(posedge clk) begin
-    if (rst == 1'b1) begin
-      M_alufn_reg_q <= 1'h0;
-    end else begin
-      M_alufn_reg_q <= M_alufn_reg_d;
+      M_flag_reg_q <= M_flag_reg_d;
     end
   end
   
@@ -1065,9 +1055,18 @@ module alu_auto_5 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_flag_reg_q <= 1'h0;
+      M_alufn_reg_q <= 1'h0;
     end else begin
-      M_flag_reg_q <= M_flag_reg_d;
+      M_alufn_reg_q <= M_alufn_reg_d;
+    end
+  end
+  
+  
+  always @(posedge clk) begin
+    if (rst == 1'b1) begin
+      M_testCase_q <= 1'h0;
+    end else begin
+      M_testCase_q <= M_testCase_d;
     end
   end
   

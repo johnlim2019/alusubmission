@@ -8,7 +8,7 @@ module alu_auto (
     output s[16] // output of sum value, 
    ) {
     alu alu;
-    const  SLOWCLOCK_SIZE = 29;
+    const  SLOWCLOCK_SIZE = 27;
   
   
     .clk(clk) {
@@ -48,14 +48,15 @@ module alu_auto (
     
     button_detector.in = button;
     edge_detector.in = slowClock.value[SLOWCLOCK_SIZE-1];
-    edge_detector.in = button;
+    //edge_detector.in = button;
     
 case (testCase.q) {
         testCase.START:
         flag_reg.d = 8h00;
         // we want to print something to show that we are in the correct component
-        s_reg.d = 16h0000;
+        s_reg.d = 16h57a7;
         checkoff_reg.d = 16h0000;
+        alufn_reg.d = b000000;
         // edge_detector sees we have pressed the button
         if (button_detector.out == 1) { //start auto alu tester
           testCase.d = testCase.ADDSTART;

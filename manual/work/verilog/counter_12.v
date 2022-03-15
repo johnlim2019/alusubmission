@@ -14,16 +14,16 @@
 module counter_12 (
     input clk,
     input rst,
-    output reg [28:0] value
+    output reg [26:0] value
   );
   
-  localparam SIZE = 5'h1d;
+  localparam SIZE = 5'h1b;
   localparam DIV = 1'h0;
   localparam TOP = 1'h0;
   localparam UP = 1'h1;
   
   
-  reg [28:0] M_ctr_d, M_ctr_q = 1'h0;
+  reg [26:0] M_ctr_d, M_ctr_q = 1'h0;
   
   localparam MAX_VALUE = 1'h0;
   

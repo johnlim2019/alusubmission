@@ -14,7 +14,8 @@ module au_top_0 (
     output reg [7:0] io_seg,
     output reg [3:0] io_sel,
     input [4:0] io_button,
-    input [23:0] io_dip
+    input [23:0] io_dip,
+    output reg [3:0] zvns
   );
   
   
@@ -98,21 +99,20 @@ module au_top_0 (
     M_alu_manual_abutton = M_buttoncond_out[0+0-:1];
     M_alu_manual_bbutton = M_buttoncond_out[1+0-:1];
     M_alu_auto_button = M_buttoncond_out[4+0-:1];
-    io_led[16+0+1-:2] = io_dip[16+0+1-:2];
+    zvns[1+2-:3] = M_store_zvn_q;
+    zvns[0+0-:1] = M_store_s_wrong_q;
     if (io_dip[16+0+0-:1] == 1'h0) begin
       M_store_zvn_d = M_alu_manual_zvn;
       M_store_s_d = M_alu_manual_s;
       io_led[8+0+7-:8] = io_dip[8+0+7-:8];
       io_led[0+0+7-:8] = io_dip[0+0+7-:8];
-      io_led[16+5+2-:3] = M_store_zvn_q;
+      io_led[16+2+5-:6] = io_dip[16+2+5-:6];
     end else begin
       M_store_zvn_d = M_alu_auto_flag[1+2-:3];
       M_store_s_d = M_alu_auto_s;
       M_store_s_wrong_d = M_alu_auto_flag[0+0-:1];
       io_led[8+7-:8] = M_alu_auto_checkoff;
-      io_led[0+2+5-:6] = M_alu_auto_alufn;
-      io_led[16+5+2-:3] = M_store_zvn_q;
-      io_led[16+0+0-:1] = M_store_s_wrong_q;
+      io_led[16+2+5-:6] = M_alu_auto_alufn;
     end
     M_alu_manual_alufn = io_dip[16+2+5-:6];
     M_alu_manual_value[8+7-:8] = io_dip[8+0+7-:8];
@@ -122,6 +122,15 @@ module au_top_0 (
     io_seg = ~M_seg_seg;
     io_sel = ~M_seg_sel;
   end
+  
+  always @(posedge clk) begin
+    if (rst == 1'b1) begin
+      M_store_s_q <= 1'h0;
+    end else begin
+      M_store_s_q <= M_store_s_d;
+    end
+  end
+  
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
@@ -137,15 +146,6 @@ module au_top_0 (
       M_store_zvn_q <= 1'h0;
     end else begin
       M_store_zvn_q <= M_store_zvn_d;
-    end
-  end
-  
-  
-  always @(posedge clk) begin
-    if (rst == 1'b1) begin
-      M_store_s_q <= 1'h0;
-    end else begin
-      M_store_s_q <= M_store_s_d;
     end
   end
   

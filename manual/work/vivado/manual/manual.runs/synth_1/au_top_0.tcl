@@ -118,6 +118,9 @@ set_property used_in_implementation false [get_files {{C:/Users/cajhm/OneDrive -
 read_xdc {{C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/io.xdc}}
 set_property used_in_implementation false [get_files {{C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/io.xdc}}]
 
+read_xdc {{C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/custom.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/custom.xdc}}]
+
 read_xdc {{C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/constraint/au.xdc}}
 set_property used_in_implementation false [get_files {{C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/constraint/au.xdc}}]
 

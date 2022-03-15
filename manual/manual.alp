@@ -21,7 +21,8 @@
     <component>button_conditioner.luc</component>
     <src>shifter16.luc</src>
     <constraint lib="true">alchitry.acf</constraint>
-    <constraint lib="true">io.acf</constraint>
+    <constraint>io.acf</constraint>
+    <constraint>custom.acf</constraint>
     <constraint>au.xdc</constraint>
   </files>
 </project>

@@ -139,6 +139,7 @@ OPTRACE "add files" START { }
 OPTRACE "read constraints: implementation" START { }
   read_xdc {{C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/alchitry.xdc}}
   read_xdc {{C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/io.xdc}}
+  read_xdc {{C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/custom.xdc}}
   read_xdc {{C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/constraint/au.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }

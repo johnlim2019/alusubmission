@@ -17,9 +17,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12856
+INFO: [Synth 8-7075] Helper process launched with PID 19688
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 999.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'au_top_0' [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/au_top_0.v:7]
 INFO: [Synth 8-6157] synthesizing module 'button_conditioner_2' [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/button_conditioner_2.v:13]
@@ -72,7 +72,7 @@ INFO: [Synth 8-6157] synthesizing module 'edge_detector_11' [C:/Users/cajhm/OneD
 INFO: [Synth 8-6155] done synthesizing module 'edge_detector_11' (14#1) [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/edge_detector_11.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'alu_manual_4' (15#1) [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/alu_manual_4.v:7]
 INFO: [Synth 8-6157] synthesizing module 'alu_auto_5' [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/alu_auto_5.v:7]
-	Parameter SLOWCLOCK_SIZE bound to: 5'b11101 
+	Parameter SLOWCLOCK_SIZE bound to: 5'b11011 
 	Parameter START_testCase bound to: 6'b000000 
 	Parameter ADDSTART_testCase bound to: 6'b000001 
 	Parameter ADD0_testCase bound to: 6'b000010 
@@ -128,28 +128,28 @@ INFO: [Synth 8-6157] synthesizing module 'alu_auto_5' [C:/Users/cajhm/OneDrive -
 	Parameter END_testCase bound to: 6'b110100 
 	Parameter ERROR_STATE_testCase bound to: 6'b110101 
 INFO: [Synth 8-6157] synthesizing module 'counter_12' [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/counter_12.v:14]
-	Parameter SIZE bound to: 5'b11101 
+	Parameter SIZE bound to: 5'b11011 
 	Parameter DIV bound to: 1'b0 
 	Parameter TOP bound to: 1'b0 
 	Parameter UP bound to: 1'b1 
 	Parameter MAX_VALUE bound to: 1'b0 
 INFO: [Synth 8-6155] done synthesizing module 'counter_12' (16#1) [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/counter_12.v:14]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/alu_auto_5.v:137]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/alu_auto_5.v:136]
 INFO: [Synth 8-6155] done synthesizing module 'alu_auto_5' (17#1) [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/alu_auto_5.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'au_top_0' (18#1) [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.srcs/sources_1/imports/verilog/au_top_0.v:7]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 999.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 999.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 999.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 999.277 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -162,30 +162,36 @@ Parsing XDC File [C:/Users/cajhm/OneDrive - Singapore University of Technology a
 Finished Parsing XDC File [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/io.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/au_top_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/au_top_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/custom.xdc]
+Finished Parsing XDC File [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/custom.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/constraint/custom.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/au_top_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/au_top_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/constraint/au.xdc]
 Finished Parsing XDC File [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/constraint/au.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/constraint/au.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/au_top_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/au_top_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 999.277 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 999.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 999.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tftg256-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 999.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 999.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'M_testCase_q_reg' in module 'alu_auto_5'
 ---------------------------------------------------------------------------------------------------
@@ -248,9 +254,8 @@ INFO: [Synth 8-802] inferred FSM for state register 'M_testCase_q_reg' in module
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'M_testCase_q_reg' using encoding 'one-hot' in module 'alu_auto_5'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 999.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-223] decloning instance 'alu_auto/edge_detector' (edge_detector_11) to 'alu_auto/button_detector'
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -270,7 +275,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 5     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
 +---Muxes : 
 	  54 Input   54 Bit        Muxes := 1     
 	   2 Input   54 Bit        Muxes := 41    
@@ -310,7 +315,7 @@ DSP Report: register alu_manual/M_store_b_q_reg is absorbed into DSP alu_manual/
 DSP Report: register alu_manual/M_store_a_q_reg is absorbed into DSP alu_manual/alu/multiplier/p0.
 DSP Report: operator alu_manual/alu/multiplier/p0 is absorbed into DSP alu_manual/alu/multiplier/p0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:01:57 . Memory (MB): peak = 999.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -332,19 +337,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1017.203 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:26 ; elapsed = 00:02:36 . Memory (MB): peak = 999.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1128.711 ; gain = 111.508
+Finished Timing Optimization : Time (s): cpu = 00:02:42 ; elapsed = 00:02:52 . Memory (MB): peak = 1121.523 ; gain = 122.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1137.781 ; gain = 120.578
+Finished Technology Mapping : Time (s): cpu = 00:02:44 ; elapsed = 00:02:54 . Memory (MB): peak = 1131.352 ; gain = 132.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -362,37 +367,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1137.781 ; gain = 120.578
+Finished IO Insertion : Time (s): cpu = 00:02:54 ; elapsed = 00:03:04 . Memory (MB): peak = 1131.352 ; gain = 132.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1137.781 ; gain = 120.578
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:54 ; elapsed = 00:03:04 . Memory (MB): peak = 1131.352 ; gain = 132.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1137.781 ; gain = 120.578
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:54 ; elapsed = 00:03:04 . Memory (MB): peak = 1131.352 ; gain = 132.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1137.781 ; gain = 120.578
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:54 ; elapsed = 00:03:04 . Memory (MB): peak = 1131.352 ; gain = 132.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1137.781 ; gain = 120.578
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:54 ; elapsed = 00:03:04 . Memory (MB): peak = 1131.352 ; gain = 132.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1137.781 ; gain = 120.578
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:54 ; elapsed = 00:03:04 . Memory (MB): peak = 1131.352 ; gain = 132.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -409,40 +414,39 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     1|
-|2     |CARRY4  |    28|
+|2     |CARRY4  |    35|
 |3     |DSP48E1 |     2|
-|5     |LUT1    |    12|
-|6     |LUT2    |   107|
-|7     |LUT3    |   160|
-|8     |LUT4    |   136|
-|9     |LUT5    |   134|
-|10    |LUT6    |   445|
-|11    |MUXF7   |     1|
-|12    |FDRE    |   248|
-|13    |FDSE    |     5|
-|14    |IBUF    |    30|
-|15    |OBUF    |    45|
+|5     |LUT1    |    15|
+|6     |LUT2    |    96|
+|7     |LUT3    |   144|
+|8     |LUT4    |   114|
+|9     |LUT5    |   154|
+|10    |LUT6    |   459|
+|11    |FDRE    |   276|
+|12    |FDSE    |     5|
+|13    |IBUF    |    29|
+|14    |OBUF    |    49|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1137.781 ; gain = 120.578
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:54 ; elapsed = 00:03:04 . Memory (MB): peak = 1131.352 ; gain = 132.074
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:13 . Memory (MB): peak = 1137.781 ; gain = 120.578
-Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1137.781 ; gain = 120.578
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:20 ; elapsed = 00:02:53 . Memory (MB): peak = 1131.352 ; gain = 132.074
+Synthesis Optimization Complete : Time (s): cpu = 00:02:55 ; elapsed = 00:03:05 . Memory (MB): peak = 1131.352 ; gain = 132.074
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1137.781 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1131.352 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1137.781 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1131.352 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+60 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1137.781 ; gain = 138.336
+synth_design: Time (s): cpu = 00:03:17 ; elapsed = 00:03:31 . Memory (MB): peak = 1131.352 ; gain = 132.074
 INFO: [Common 17-1381] The checkpoint 'C:/Users/cajhm/OneDrive - Singapore University of Technology and Design/Y2T4/comp struct 50.002/fpgaT4/manual/work/vivado/manual/manual.runs/synth_1/au_top_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file au_top_0_utilization_synth.rpt -pb au_top_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 15 16:46:23 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 15 20:57:07 2022...
